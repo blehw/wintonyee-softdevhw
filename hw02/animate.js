@@ -5,7 +5,7 @@
 
 var c = document.getElementById("canvas");
 var ctx = c.getContext("2d");
-var radius = 200;
+var radius = 100;
 var growing = true;
 
 var clear = function clear() {
@@ -26,13 +26,12 @@ function animation() {
     if (radius <=0) {
 	growing = true;
     }
+    clear();
     ctx.fillStyle = "#000000";
     ctx.beginPath();
     ctx.arc(300,300,radius,0,2*Math.PI);
     ctx.fill();
     window.requestAnimationFrame(animation);
-    
-    document.write(radius);
 };
 
 document.getElementById("start").addEventListener("click", animation);
