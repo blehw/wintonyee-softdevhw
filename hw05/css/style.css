@@ -1,0 +1,26 @@
+.clinton div {
+  font: 10px sans-serif;
+  background-color: blue;
+  text-align: right;
+  padding: 3px;
+  margin: 1px;
+  color: white;
+}
+
+.sanders div {
+  font: 10px sans-serif;
+  background-color: blue;
+  text-align: right;
+  padding: 3px;
+  margin: 1px;
+  color: white;
+}
+
+.unassigned div {
+  font: 10px sans-serif;
+  background-color: lightblue;
+  text-align: right;
+  padding: 3px;
+  margin: 1px;
+  color: white;
+}
