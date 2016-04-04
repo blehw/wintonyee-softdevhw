@@ -63,3 +63,24 @@ print pStrength(goodp)
 print "should be 8"
 print pStrength(bestp)
 print "should be 10"
+
+def strengthCheck(p):
+    l = [1 if x in UC_LETTERS else 2 if x in lc_letters else 3 if x in nums else 0 for x in p]
+    return 1 in l and 2 in l and 3 in l
+
+p1 = 'Passw0rd'
+p2 = 'password'
+p3 = 'passw0rd'
+p4 = 'Password'
+
+print p1 + ':' + str(strengthCheck(p1))
+print p2 + ':' + str(strengthCheck(p2))
+print p3 + ':' + str(strengthCheck(p3))
+print p4 + ':' + str(strengthCheck(p4))
+
+'''
+def strengthRate(p):
+    l = [1 if x in UC_letters else 2 if x in lc_letters else 3 if x in nums else 4 if x in non_alpha else 0 for x in p]
+    uc = len(p) - l.count(1)
+''' 
+
