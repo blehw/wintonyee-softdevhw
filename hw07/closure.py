@@ -36,3 +36,10 @@ print f(1)(2)
 print a
 print f(a)
 
+def repeat(string):
+    return lambda num: num * string
+
+r1 = repeat('hello')
+print r1
+print r1(2)
+print repeat('cool')(3)
