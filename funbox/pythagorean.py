@@ -14,5 +14,13 @@ def pt2(n):
 
 #print pt2(16)
 
+'''
+1) pick a PIVOT
+2) partition into 2 lists, such that
+   *all v's < P are LH
+   *all v's > P are UH
+   *pivot is in the right spot
+3) qsort(LH) + pt(qsortUH)
+'''
 
     
