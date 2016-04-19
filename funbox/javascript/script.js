@@ -26,6 +26,14 @@ var makeIncrementer = function() {
     var x = 0;
     return function() {
 	x = x + 1;
-	return x
+	return x;
+    }
+}
+
+var makeAdder = function(n) {
+    var x = 0;
+    return function() {
+	x = x + n;
+	return x;
     }
 }
